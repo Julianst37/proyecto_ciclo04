@@ -1,0 +1,15 @@
+function ObtenerJornada(jornada)
+{
+    strfiltro="";
+    if(jornada === "mañana")
+    {
+        strfiltro= "&& cita.hora >= 08:00 && cita.hora <=12:00";
+    }
+
+    else
+    {
+        strfiltro= "&& cita.hora >= 13:00 && cita.hora <=17:00";
+    }
+
+    return strfiltro;
+}

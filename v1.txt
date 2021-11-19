@@ -1,0 +1,15 @@
+const obtenerCitasDisponibles=(especialidad,fecha_inicio,fecha_final)=>{
+    return CITAS.filter(cita => cita.especialidad === especialidad && cita.fecha >= fecha_inicio && cita.fecha <=fecha_final)
+};
+
+
+const obtenerCitasPorJornada=(especialidad,fecha_inicio,fecha_final,jornadaPreferida)=>{
+    let resultados= obtenerCitasDisponibles(especialidad,fecha_inicio,fecha_final);
+    return resultados.filter(cita => cita.especialidad === especialidad && cita.fecha >= fecha_inicio && cita.fecha <=fecha_final && jornadaPreferida=="mañana"?(cita.hora.split(':') >= "08" && cita.hora.split(':') <= "12"):(cita.hora.split(':') >= "13" && cita.hora.split(':') <= "17"));
+}
+
+
+
+
+module.exports.obtenerCitasDisponibles= obtenerCitasDisponibles;
+module.exports.obtenerCitasPorJornada= obtenerCitasPorJornada;

@@ -1,0 +1,52 @@
+#img1{
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    
+}
+#Cabeza{
+    margin-top: 0px;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(99, 217, 16);
+}
+#form-registro{
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 35%;
+    width: 30%;
+    height: 450px;
+}
+input[type=text],input[type=password],select{
+    background-color: grey;
+    height: 25px;
+    width: 60%;
+    border-radius: 5px;
+    color: white;
+}
+::placeholder{
+    color: white;
+}
+button,input[type=submit]{
+    background-color: rgb(99, 217, 16);
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+body{
+    text-align: center;
+}
+#form-login{
+    margin-left: 35%;
+    border-radius: 10px;
+    border-style: outset;
+    margin-top: 10px;
+    height: 280px;
+    width: 30%;
+    background-color: rgb(233, 229, 223);
+}
